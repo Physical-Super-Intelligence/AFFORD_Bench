@@ -3,8 +3,11 @@
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Conference](https://img.shields.io/badge/RSS-2027-red.svg)](https://roboticsconference.org/)
+[![Affiliation](https://img.shields.io/badge/Affiliation-Yeungnam%20University-003876.svg)](https://www.yu.ac.kr/)
 [![Benchmarks](https://img.shields.io/badge/Manifests-Full%20(960)%20%7C%20Lite%20(96)-success.svg)](benchmark/)
 [![Safety](https://img.shields.io/badge/Safety%20Bound-150%20N%20%7C%20Actuator%20Torques-orange.svg)](docs/BENCHMARK_SPEC.md)
+
+**Yeungnam University** &middot; **Physical AGI**
 
 **Project Webpage:** [https://physical-agi.github.io/AFFORD_Bench/](https://physical-agi.github.io/AFFORD_Bench/)  
 **Code Repository:** [https://github.com/Physical-AGI/AFFORD_Bench](https://github.com/Physical-AGI/AFFORD_Bench)
@@ -87,11 +90,12 @@ If you use AFFORD-Bench in your research, please cite:
 
 ```bibtex
 @article{sarowar2026affordbench,
-  title   = {AFFORD-Bench: A Benchmark for Physical Affordance, Compliance, and Reactive Contact Robustness in Robot Manipulation},
-  author  = {Sarowar, Selim and Physical AGI Team},
-  journal = {Robotics: Science and Systems (RSS)},
-  year    = {2027},
-  url     = {https://github.com/Physical-AGI/AFFORD_Bench}
+  title       = {AFFORD-Bench: A Benchmark for Physical Affordance, Compliance, and Reactive Contact Robustness in Robot Manipulation},
+  author      = {Sarowar, Selim and Physical AGI Team},
+  institution = {Yeungnam University},
+  journal     = {Robotics: Science and Systems (RSS)},
+  year        = {2027},
+  url         = {https://github.com/Physical-AGI/AFFORD_Bench}
 }
 ```
 

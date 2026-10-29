@@ -132,10 +132,54 @@ h1 em { color: var(--accent); font-style: italic; }
 .authors a:hover { color: var(--accent); }
 .authors sup { position: relative; top: -0.2em; font-size: 0.75em; }
 
-.institution-badges { width: 100%; justify-self: center; padding: 14px; background: var(--bg); border: 1px solid var(--line); border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,0.03); }
-.institution-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px 16px; align-items: center; list-style: none; margin: 0; padding: 0; }
-.institution-grid li { display: flex; align-items: center; justify-content: center; height: 72px; }
-.institution-grid img { width: 100%; max-width: 76px; max-height: 60px; object-fit: contain; }
+.institution-badges {
+  width: 100%;
+  justify-self: center;
+  padding: 16px 20px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.03);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+.institution-featured {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--line);
+}
+.institution-featured img {
+  height: 48px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+.institution-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.institution-grid li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 54px;
+}
+.institution-grid img {
+  max-height: 48px;
+  width: auto;
+  object-fit: contain;
+}
 
 .hero-support { display: grid; grid-template-columns: minmax(0, 1fr) var(--hero-aside-width); gap: 64px; padding-top: 36px; align-items: center; }
 .hero-summary { max-width: 660px; font-size: 18px; line-height: 1.75; margin-bottom: 24px; }
@@ -364,19 +408,18 @@ footer { padding: 48px 0; border-top: 1px solid var(--line); }
           <p class="eyebrow">AFFORD-BENCH · PHYSICAL CONTACT ROBUSTNESS</p>
           <h1>Do robot manipulation policies comply<br>when <em>contacts shift?</em></h1>
           <p class="authors" aria-label="Authors">
-            <span class="author-row"><span><a href="https://github.com/s-elim" target="_blank" rel="noreferrer">Selim Sarowar</a><sup>1</sup></span>, <span>Physical AGI Research Team<sup>1</sup></span>, <span>Robotics &amp; Vision-Language-Action Collaborators<sup>2</sup></span></span>
+            <span class="author-row"><span><a href="https://github.com/s-elim" target="_blank" rel="noreferrer">Selim Sarowar</a><sup>1</sup></span>, <span>Physical AGI Research Team<sup>1,2</sup></span></span>
+            <span class="author-row" style="margin-top: 6px; font-size: 14.5px; color: var(--fg); font-weight: 500;"><sup>1</sup>Yeungnam University &nbsp;·&nbsp; <sup>2</sup>Physical AGI</span>
           </p>
         </div>
         <aside class="institution-badges" aria-label="Author affiliations">
+          <div class="institution-featured">
+            <img class="featured-yu-logo" src="assets/institutions/yeungnam_horizontal.svg" alt="Yeungnam University" width="230" height="52">
+          </div>
           <ul class="institution-grid">
-            <li><img src="assets/institutions/physical_agi.svg" alt="Physical AGI" width="80" height="40"></li>
-            <li><img src="assets/institutions/stanford.png" alt="Stanford University" width="80" height="70"></li>
-            <li><img src="assets/institutions/cmu-red.svg" alt="Carnegie Mellon University" width="80" height="50"></li>
-            <li><img src="assets/institutions/mit.svg" alt="Massachusetts Institute of Technology" width="80" height="50"></li>
-            <li><img src="assets/institutions/ut-austin.png" alt="UT Austin" width="70" height="70"></li>
-            <li><img src="assets/institutions/ntu-crest.svg" alt="Nanyang Technological University" width="70" height="70"></li>
-            <li><img src="assets/institutions/nyu.svg" alt="New York University" width="80" height="30"></li>
-            <li><img src="assets/institutions/uiuc.svg" alt="UIUC" width="70" height="60"></li>
+            <li><img src="assets/institutions/yeungnam_emblem.svg" alt="Yeungnam University Emblem" width="60" height="60"></li>
+            <li><img src="assets/institutions/yeungnam.svg" alt="영남대학교 Yeungnam University Wordmark" width="90" height="38"></li>
+            <li><img src="assets/institutions/physical_agi.svg" alt="Physical AGI" width="80" height="36"></li>
           </ul>
         </aside>
       </div>
@@ -734,11 +777,12 @@ footer { padding: 48px 0; border-top: 1px solid var(--line); }
           <button class="copy-bibtex" type="button" data-copy-target="bibtex-entry">Copy BibTeX</button>
         </div>
         <pre id="bibtex-entry" aria-label="AFFORD-Bench BibTeX citation"><code>@article{sarowar2026affordbench,
-  title   = {AFFORD-Bench: A Benchmark for Physical Affordance, Compliance, and Reactive Contact Robustness in Robot Manipulation},
-  author  = {Sarowar, Selim and Physical AGI Team},
-  journal = {Robotics: Science and Systems (RSS)},
-  year    = {2027},
-  url     = {https://github.com/Physical-AGI/AFFORD_Bench}
+  title       = {AFFORD-Bench: A Benchmark for Physical Affordance, Compliance, and Reactive Contact Robustness in Robot Manipulation},
+  author      = {Sarowar, Selim and Physical AGI Team},
+  institution = {Yeungnam University},
+  journal     = {Robotics: Science and Systems (RSS)},
+  year        = {2027},
+  url         = {https://github.com/Physical-AGI/AFFORD_Bench}
 }</code></pre>
       </div>
     </section>
@@ -778,6 +822,12 @@ footer { padding: 48px 0; border-top: 1px solid var(--line); }
             img.src = "assets/brand/affordbench_wordmark.svg";
           }
         });
+        const yuLogo = document.querySelector(".featured-yu-logo");
+        if (yuLogo) {
+          yuLogo.src = theme === "dark"
+            ? "assets/institutions/yeungnam_horizontal_white.svg"
+            : "assets/institutions/yeungnam_horizontal.svg";
+        }
       }
 
       // Initial check
