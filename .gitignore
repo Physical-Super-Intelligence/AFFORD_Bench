@@ -1,0 +1,65 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Large Datasets & Media (>100MB GitHub limit)
+datasets/*.hdf5
+datasets/**/*.hdf5
+*.hdf5.partial
+*.partial
+datasets/*.h5
+*.mp4
+*.avi
+*.mov
+!docs/videos/*.mp4
+!datasets/.gitkeep
+
+# Virtual Environments
+.venv/
+env/
+venv/
+ENV/
+
+# IDE & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+MUJOCO_LOG.TXT
+*.swp
+*.log
+
+# LaTeX auxiliary files
+*.aux
+*.bbl
+*.blg
+*.out
+*.synctex.gz
+*.toc
+*.fls
+*.fdb_latexmk
+
+# Model Checkpoints
+checkpoints/*.pt
+checkpoints/**/*.pt
+checkpoints/*.pth
+checkpoints/*.bin
+!checkpoints/.gitkeep
+
+# Scratch files
+libero_pro_full_text.txt
+*.tmp
+scratch/
+
+
+# Paper source and drafts (kept local, not published)
+AFFORD-Bench_RSS'27/
+
+# Evaluation outputs
+results/
+

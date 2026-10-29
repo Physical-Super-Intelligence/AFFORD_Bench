@@ -1,0 +1,11 @@
+# Dependencies of the unit tests run in .github/workflows/ci.yml.
+# MuJoCo is pinned to the build that generated the released datasets and every reported number (see
+# docs/roadmap/EXPERIMENT_LOG.md); contact results can change across releases.
+mujoco==3.5.0
+gymnasium
+numpy
+h5py
+pyyaml
+pyarrow
+pillow
+pytest
